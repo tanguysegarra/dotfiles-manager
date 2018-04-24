@@ -34,8 +34,8 @@ git add -f .gitignore
 git add -f .zshrc
 git add -f .vimrc
 git add -f .i3block.conf
-git add -rf .config/i3
-git add -f nms.jpg
+git add -f .config/i3/config
+git add -f Pictures/nms.jpg
 git add -f README.md
 git commit -m 'added dotfiles and wallpaper'
 git push origin master
@@ -45,6 +45,12 @@ Make your script executable with
 
 ```
 $ chmod +x gpdots.sh
+```
+
+Then push to your git with
+
+```
+./gpdots.sh
 ```
 
 ## On a new machine
