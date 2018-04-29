@@ -194,4 +194,4 @@ new_window 1pixel
 #exec_always polybar example
 exec_always nm-applet
 exec_always compton
-exec_always feh --bg-scale /home/gnathl/Pictures/mario-avengers.jpg
+exec_always feh --bg-scale /home/gnathl/Pictures/dedsec.gif
