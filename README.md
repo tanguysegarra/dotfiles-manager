@@ -59,8 +59,6 @@ Then push to your git with
 ```
 $ cd ~
 $ git clone https://github.com/<your-username>/<repo-name>.git
-$ mv <repo-name>/* <repo-name>/.* .
-$ rm -rf <repo-name>
 ```
 
 ## Built With
