@@ -2,6 +2,8 @@
 
 Easy way to keep your dotfiles up-to-date on your personal git, without using silly sym-links!
 
+Dependencies : i3, i3-status, epi3lock, i3-gaps (anarchy-linux packages)
+
 ## Setup
 
 Initialize an empty git repository at your home directory with
@@ -30,14 +32,13 @@ Edit it according to your needs, for me it will be
 
 ```
 #!/bin/bash
-git add -f .gitignore
-git add -f .zshrc
-git add -f .vimrc
-git add -f .i3block.conf
-git add -f .config/i3/config
-git add -f Pictures/dedsec.gif
-git add -f README.md
-git add -f gpdots.sh
+declare -a arr=('.gitignore' '.bashrc' '.zshrc'
+                '.vimrc' '.i3block.conf' '.config/i3/config'
+                 'README.md' 'gpdots.sh')
+for i in "${arr[@]}"
+do
+  git add -f $i
+done
 git commit -m 'added dotfiles and wallpaper'
 git push origin master
 ```
