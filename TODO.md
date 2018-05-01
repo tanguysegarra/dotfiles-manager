@@ -4,6 +4,7 @@
 * Improve gpdots.sh : use bash array full of paths/to/file and iterate over the array to git add -> easier for users;
 ```
 declare -a arr=("element1" "element2" "element3")
+arraylength=${#array[@]}
 for (( i=1; i<${arraylength}+1; i++ ));
 OR for i in "${arr[@]}"
 do
