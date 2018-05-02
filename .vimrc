@@ -1,3 +1,6 @@
+"   Vim Config
+"   ----------
+
 set mouse=a
 set number
 set noswapfile
