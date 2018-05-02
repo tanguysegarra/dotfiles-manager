@@ -1,8 +1,8 @@
-# dotfiles-management
+# How I manage my dotfiles
 
 Easy way to keep your dotfiles up-to-date on your personal git, without using silly sym-links!
 
-Dependencies : i3, i3-status, epi3lock, i3-gaps (anarchy-linux packages)
+Dependencies : i3, i3-status, i3lock, i3-gaps (I personally use anarchy-linux packages)
 
 ## Setup
 
@@ -11,7 +11,7 @@ Initialize an empty git repository at your home directory with
 ```
 $ cd ~
 $ git init
-$ git remote add origin https://github.com/<username>/<repo-name>.git
+$ git remote add origin https://github.com/tanguysegarra/dotfiles.git
 ```
 
 Create a gitignore file along the .git folder with
@@ -32,14 +32,16 @@ Edit it according to your needs, for me it will be
 
 ```
 #!/bin/bash
-declare -a arr=('.gitignore' '.bashrc' '.zshrc'
-                '.vimrc' '.i3block.conf' '.config/i3/config'
-                 'README.md' 'gpdots.sh')
-for i in "${arr[@]}"
+arr=('.config/i3/config' 'connected.jpg' '.gitignore'
+     'gpdots.sh' '.i3block.conf' 'README.md'
+     'setup.sh' '.vimrc' '.zshrc')
+
+for i in "${arr[@]}";
 do
-  git add -f $i
+    git add -f $i
 done
-git commit -m 'added dotfiles and wallpaper'
+
+git commit -m 'Updated dotfiles and wallpaper'
 git push origin master
 ```
 
@@ -55,16 +57,22 @@ Then push to your git with
 ./gpdots.sh
 ```
 
-## On a new machine
+## On a new machine (or on yours)
+
+If you want to use my dotfiles properly, I wrote a script for you! 
 
 ```
 $ cd ~
-$ git clone https://github.com/<your-username>/<repo-name>.git
+$ git clone https://github.com/tanguysegarra/setup.git
+$ cd setup
+$ ./setup.sh
 ```
+
+/!\ Beware! This last script removes folders called 'dotfiles' and '.git' at your home. You're warned, no crying afterwards.
 
 ## Built With
 
-* Bash Language
+* Bash Script Language
 * Git
 
 ## Authors
