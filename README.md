@@ -63,8 +63,8 @@ If you want to use my dotfiles properly, I wrote a script for you!
 
 ```
 $ cd ~
-$ git clone https://github.com/tanguysegarra/setup.git
-$ cd setup
+$ git clone https://github.com/tanguysegarra/dotfiles.git
+$ cd dotfiles
 $ ./setup.sh
 ```
 
