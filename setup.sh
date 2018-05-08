@@ -17,6 +17,7 @@ do
     mv -f "$f" .
 done
 mv ~/dotfiles/.config/i3/config ~/.config/i3/
+cd ~
 rm -rf ~/dotfiles
 i3-msg restart
 
