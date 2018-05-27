@@ -133,4 +133,4 @@ for_window [class="^.*"] border pixel 3
 new_window 1pixel
 exec_always nm-applet
 exec_always compton
-exec_always feh --bg-scale /home/tanguy/connected.jpg
+exec_always feh --bg-scale /home/tanguy/arch.png

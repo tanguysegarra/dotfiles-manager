@@ -2,6 +2,8 @@
 ####### Anarchy ZSH configuration file    #######
 #######################################################
 
+export ASAN_OPTIONS="detect_leaks=0"
+
 ### Set/unset ZSH options
 #########################
 # setopt NOHUP
@@ -67,6 +69,7 @@ unsetopt ALL_EXPORT
 
 ### Set alias
 #############
+alias la='ls -a'
 alias ll='ls -al'
 alias ls='ls --color=auto '
 alias c="clear"
