@@ -5,6 +5,9 @@
 #   Install dotfiles on your machine
 #   --------------------------------
 
+# in dotfiles-manager
+cp -r -t . add-dots.sh .git .gitignore
+
 cd ~
 rm -rf dotfiles .git
 rm -f ~/.config/i3/config

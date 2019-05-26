@@ -78,7 +78,7 @@ If you want to use my dotfiles properly, I wrote a script for you!
 $ cd ~
 $ git clone https://github.com/tanguysegarra/dotfiles-manager.git
 $ cd dotfiles-manager
-$ ./setup.sh
+$ ./install-dots.sh
 ```
 
 **/!\ Beware!** This last script removes folders called *dotfiles-manager* and *.git* at your home. You're warned, no crying afterwards.

@@ -40,3 +40,4 @@ export ARCHFLAGS="-arch x86_64"
 
 alias mk="make -B"
 alias za="zathura"
+alias dots="cd ~ & ./add-dots.sh"
