@@ -1,12 +1,44 @@
-"   Vim Config
-"   ----------
+" Basic config "
 
-set mouse=a
-set number
-set noswapfile
-set expandtab
-set autoindent
 syntax on
-set nocompatible
-set tabstop=4 softtabstop=0 shiftwidth=4 smarttab
-colo darkblue
+set number
+set autoindent
+set colorcolumn=81
+set mouse=a
+set encoding=utf-8
+set tabstop=8
+set shiftwidth=8
+set noexpandtab
+set noswapfile
+colo ron
+
+" Useful autocomplete matching chars"
+
+inoremap {  {}<Left><Return><Esc>O
+inoremap {{ {
+inoremap {} {}
+
+inoremap (  ()<Left>
+inoremap () ()
+inoremap (( (
+
+inoremap "  ""<Left>
+inoremap "" ""
+
+inoremap '  '
+inoremap '' ''<Left>
+inoremap ''' ''
+
+inoremap <  ><Left><
+inoremap << <<
+inoremap <<Space> <<Space>
+inoremap <=  <=
+
+inoremap [  []<Left>
+inoremap [] []
+inoremap [[ [
+
+" Because I type wayyy to often "
+
+inoremap #inc #include
+

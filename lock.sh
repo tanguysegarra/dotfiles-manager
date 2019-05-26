@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PICTURE=/tmp/i3lock.png
+SCREENSHOT="scrot $PICTURE"
+
+RESIZE10="10"
+RESIZE1000="1000"
+$SCREENSHOT
+convert $PICTURE -scale $RESIZE10% -scale $RESIZE1000% $PICTURE
+i3lock -i $PICTURE
+rm $PICTURE
